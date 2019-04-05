@@ -12,6 +12,14 @@ $(call inherit-product, vendor/aosp/common.mk)
 #bootanimation
 TARGET_BOOT_ANIMATION_RES := 2280
 
+# Build with GApps if GAPPS_BUILD is true
+ifeq ($(GAPPS_BUILD),true)
+    WITH_GAPPS := true
+    TARGET_GAPPS_ARCH := arm64
+    IS_PHONE := true
+    TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+endif
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_beryllium
 PRODUCT_DEVICE := beryllium
