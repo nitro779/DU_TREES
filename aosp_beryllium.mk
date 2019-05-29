@@ -9,6 +9,9 @@ $(call inherit-product, device/xiaomi/beryllium/device.mk)
 # Inherit some common AEX stuff.
 $(call inherit-product, vendor/aosp/common.mk)
 
+#bootanimation
+TARGET_BOOT_ANIMATION_RES := 2280
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_beryllium
 PRODUCT_DEVICE := beryllium
