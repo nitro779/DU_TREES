@@ -1,6 +1,18 @@
 [
   {
-    "repository": "android_device_xiaomi_sdm845-common",
+    "repository": "device_xiaomi_sdm845-common",
     "target_path": "device/xiaomi/sdm845-common"
+  },
+  {
+    "remote": "github",
+    "repository":  "LineageOS/android_kernel_xiaomi_sdm845",
+    "target_path": "kernel/xiaomi/sdm845",
+    "branch": "lineage-16.0"
+  },
+  {
+    "remote": "github",
+    "repository":  "theHari08/vendor_xiaomi",
+    "target_path": "vendor/xiaomi/",
+    "branch": "9.x"
   }
 ]
