@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_beryllium.mk
+    $(LOCAL_DIR)/du_beryllium.mk
+
+COMMON_LUNCH_CHOICES := \
+		    du_beryllium-user \
+		    du_beryllium-userdebug \
+		    du_beryllium-eng
